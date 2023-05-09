@@ -1213,6 +1213,12 @@ video {
     margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
+  .xl\:space-x-5 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
   .xl\:pl-20 {
     padding-left: 5rem;
   }
@@ -1233,5 +1239,25 @@ video {
 
   .xl\:font-semibold {
     font-weight: 600;
+  }
+}
+
+@media (min-width: 1560px) {
+  .\32xl\:h-\[28rem\] {
+    height: 28rem;
+  }
+
+  .\32xl\:w-96 {
+    width: 24rem;
+  }
+
+  .\32xl\:w-\[30rem\] {
+    width: 30rem;
+  }
+
+  .\32xl\:space-x-6 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 }
